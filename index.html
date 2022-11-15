@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="yandex-verification" content="455a9c1052e8bbb7"/>
+    <title>Сервис продаж квартир</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/fonts/stylesheet.css">
+    <link rel="shortcut icon" href="/img/favicon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+
+    <header class="header animate__animated animate__fadeInTopLeft">
+        <div class="logo">
+            <img src="/img/logo.webp" alt="" class="logoimg">
+        </div>
+        <nav class="nav">
+            <a href="#help" class="navlink">Помощь в&nbsp;подборе</a>
+            <a href="#zhk" class="navlink">ЖК</a>
+            <a href="#ipoteka" class="navlink">Ипотека</a>
+            <a href="#footer" class="navlink">Контакты</a>
+        </nav>
+        <div class="tel">
+            <a href="tel:+7 921 366-16-93" class="number">+7 921 366-16-93</a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-photo">
+            <div class="main-text animate__animated animate__fadeInDown">
+                <h1 class="header-text"> Сервис продажи <br> квартир в&nbsp;новостройках <br>
+                    <nobr>Санкт-Петербурга</nobr>
+                </h1>
+            </div>
+            <div class="advantages"> <span>Квартиры по&nbsp;ценам и&nbsp;условиям <br> застройщиков</span>
+                <span>Сопровождение на&nbsp;сделке</span> <span>Все акции и&nbsp;скидки в&nbsp;одном месте</span>
+            </div>
+        </div>
+        <div class="about animate__animated animate__fadeInRight">
+            <div class="about-value">
+                <div> <span>62&nbsp;000</span> <span class="about-text">Квартир от&nbsp;<br> застройщиков</span> </div>
+                <div> <span>373</span> <span class="about-text">ЖК&nbsp;в&nbsp;разных <br> районах Петербурга</span>
+                </div>
+                <div> <span>21</span> <span class="about-text">Надежный <br> застройщик</span> </div>
+            </div> <button class="pick"> <a href="#help">Подобрать</a> </button>
+        </div>
+    </main> <!--  -->
+    <section class="section-1">
+
+        <div class="container-1">
+            <h2 class="sellspb">Продажа недвижимости в&nbsp;<br>
+                <nobr>Санкт-Петербурге</nobr>
+            </h2>
+            <div class="pluses">
+                <div class="plus"> <span>Широкий выбор квартир</span>
+                    <p>Большая база квартир в&nbsp;новостройках Петербурга с&nbsp;квартирами</p>
+                    <p> Наши менеджеры подберут варианты в&nbsp;готовом доме или жилом комплексе с&nbsp;подходящим
+                        сроком сдачи. </p>
+                </div>
+                <div class="plus"> <span>Одобрение ипотеки</span>
+                    <p>Помогаем оформить и&nbsp;получить ипотеку с&nbsp;комфортными кредитными условиями для каждого.
+                    </p>
+                    <p>Наш ипотечный отдел поддерживает партнерские отношения с&nbsp;ведущими банками, которые работают
+                        с&nbsp;застройщиками города</p>
+                </div>
+                <div class="plus"> <span>Сопровождение сделок</span>
+                    <p>Полностью сопровождаем сделку, помогая вам избежать подводных камней связанных с&nbsp;покупкой
+                        недвижимости.</p>
+                    <p>Бронируем понравившийся вариант, контролируем процесс одобрения ипотеки, согласуем время
+                        и&nbsp;дату подписания договора. Без комиссий.</p>
+                </div>
+            </div>
+            <h2 class="setting-header" id="help">Выберите параметры квартиры и&nbsp;<br> получите подборку прямо сейчас
+            </h2>
+
+            <form class="setting" method="POST" action="send.php">
+
+                <select name="rooms">
+                    <option value="Студия">Студия</option>
+                    <option value="1-комнатная">1-комнатная</option>
+                    <option value="2-комнатная">2-комнатная</option>
+                    <option value="3-комнатная">3-комнатная</option>
+                    <option value="4-комнатная">4-комнатная</option>
+                    <option value="Евро-планировка">Евро-планировка</option>
+                </select>
+
+                <select method="POST" action="send.php" name="oplata">
+                    <option value="Ипотека">Ипотека</option>
+                    <option value="100% оплата">100% оплата</option>
+                    <option value="Субсидия">Субсидия</option>
+                    <option value="Рассрочка">Рассрочка</option>
+                </select>
+
+                <select method="POST" action="send.php" name="summ">
+                    <option value="До 5млн. рублей">До 5млн. рублей</option>
+                    <option value=">До 8млн. рублей">До 8млн. рублей</option>
+                    <option value="До 10млн. рублей">До 10млн. рублей</option>
+                    <option value="До 13млн. рублей">До 13млн. рублей</option>
+                    <option value="До 15млн. рублей">До 15млн. рублей</option>
+                    <option value="От 15млн. рублей">От 15млн. рублей</option>
+                </select>
+
+                <input type="tel" name="phone" class="input-phone" placeholder="Ваш телефон" pattern="\+?[0-9\s\-\(\)]+" minlength="10"/>
+                <input type="submit" class="take" style="color: white;">
+
+            </form>
+
+        </div>
+    </section>
+    <section class="section-2" id="zhk">
+
+        <!--  -->
+        <div class="zhk-min-wrapper">
+            <div class="zhk">
+                <div class="card-zhk">
+                    <img src="/img/orlov.webp" alt="">
+                    <h3>ЖК&nbsp;Граф Орлов</h3>
+                    <span class="metro">м. Московская</span>
+                    <span class="comfort">
+                        <nobr>Бизнес-класс</nobr>
+                    </span>
+                    <span class="comfort">Потолки до&nbsp;4,5&nbsp;м.</span>
+                    <div>
+                        <button>
+                            <a href="/zhk/orlov/orlov.html">Квартиры</a>
+                        </button>
+                        <span class="summ">Цены по запросу</span>
+                    </div>
+                </div>
+                <div class="card-zhk">
+                    <img src="/img/london.webp" alt="">
+                    <h3>ЖК&nbsp;Лондон парк</h3>
+                    <span class="metro">м. Проспект Просвещения</span>
+                    <span class="comfort">
+                        <nobr>Комфорт-класс</nobr>
+                    </span>
+                    <span class="comfort">Свой вишневый сад</span>
+                    <div>
+                        <button>
+                            <a href="/zhk/london/london.html">Квартиры</a>
+                        </button>
+                        <span class="summ">Цены по запросу</span>
+                    </div>
+                </div>
+                <div class="card-zhk">
+                    <img src="/zhk/murino/img/card-photo.jpg" alt="">
+                    <h3>ЖК&nbsp;ID Murino II</h3>
+                    <span class="metro">м. Девяткино</span>
+                    <span class="comfort">
+                        <nobr>Комфорт-класс</nobr>
+                    </span>
+                    <span class="comfort">Умные технологии</span>
+                    <div>
+                        <button>
+                            <a href="/zhk/murino/murino.html">Квартиры</a>
+                        </button>
+                        <span class="summ">Цены по запросу</span>
+                    </div>
+                </div>
+            </div>
+            <div class="zhk">
+                <div class="card-zhk">
+                    <img src="/img/poet.webp" alt="">
+                    <h3>ЖК&nbsp;Поэт</h3>
+                    <span class="metro">м. Проспект Просвещения</span>
+                    <span class="comfort">
+                        <nobr>Комфорт-класс</nobr>
+                    </span>
+                    <span class="comfort">С&nbsp;видом на&nbsp;Сосновку</span>
+                    <div>
+                        <button>
+                            <a href="/zhk/poet/poet.html">Квартиры</a>
+                        </button>
+                        <span class="summ">Цены по запросу</span>
+                    </div>
+                </div>
+                <div class="card-zhk">
+                    <img src="/img/terra.webp" alt="">
+                    <h3>ЖК&nbsp;Terra</h3>
+                    <span class="metro">м. Лесная</span>
+                    <span class="comfort">
+                        <nobr>Бизнес-класс</nobr>
+                    </span>
+                    <span class="comfort">Квартиры с&nbsp;гостиной и&nbsp;гардеробной</span>
+                    <div>
+                        <button>
+                            <a href="/zhk/terra/terra.html">Квартиры</a>
+                        </button>
+                        <span class="summ">Цены по запросу</span>
+                    </div>
+                </div>
+                <div class="card-zhk">
+                    <img src="/img/msk.webp" alt="">
+                    <h3>ЖК&nbsp;Московский</h3>
+                    <span class="metro">м. Звездная</span>
+                    <span class="comfort">
+                        <nobr>Комфорт-класс</nobr>
+                    </span>
+                    <span class="comfort">Отделка в&nbsp;подарок</span>
+                    <div>
+                        <button>
+
+                            <a href="/zhk/msk/msk.html">Квартиры</a>
+                        </button>
+                        <span class="summ">Цены по запросу</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  -->
+
+        <div class="zhk-2">
+            <div class="card-zhk">
+                <img src="/img/orlov.webp" alt="">
+                <h3>ЖК&nbsp;Граф Орлов</h3>
+                <span class="metro">м. Московская</span>
+                <span class="comfort">
+                    <nobr>Бизнес-класс</nobr>
+                </span>
+                <span class="comfort">Потолки до&nbsp;4,5&nbsp;м.</span>
+                <div>
+                    <button>
+                        <a href="/zhk/orlov/orlov.html">Квартиры</a>
+                    </button>
+                    <span class="summ">Цены по запросу</span>
+                </div>
+            </div>
+            <div class="card-zhk">
+                <img src="/img/london.webp" alt="">
+                <h3>ЖК&nbsp;Лондон парк</h3>
+                <span class="metro">м. Проспект Просвещения</span>
+                <span class="comfort">
+                    <nobr>Комфорт-класс</nobr>
+                </span>
+                <span class="comfort">Свой вишневый сад</span>
+                <div>
+                    <button>
+                        <a href="/zhk/london/london.html">Квартиры</a>
+                    </button>
+                    <span class="summ">Цены по запросу</span>
+                </div>
+            </div>
+        </div>
+        <div class="zhk-2">
+            <div class="card-zhk">
+                <img src="/zhk/murino/img/card-photo.jpg" alt="">
+                <h3>ЖК&nbsp;ID Murino II</h3>
+                <span class="metro">м. Девяткино</span>
+                <span class="comfort">
+                    <nobr>Комфорт-класс</nobr>
+                </span>
+                <span class="comfort">Умные технологии</span>
+                <div>
+                    <button>
+                        <a href="/zhk/murino/murino.html">Квартиры</a>
+                    </button>
+                    <span class="summ">Цены по запросу</span>
+                </div>
+            </div>
+            <div class="card-zhk">
+                <img src="/img/poet.webp" alt="">
+                <h3>ЖК&nbsp;Поэт</h3>
+                <span class="metro">м. Проспект Просвещения</span>
+                <span class="comfort">
+                    <nobr>Комфорт-класс</nobr>
+                </span>
+                <span class="comfort">С&nbsp;видом на&nbsp;Сосновку</span>
+                <div>
+                    <button>
+                        <a href="/zhk/poet/poet.html">Квартиры</a>
+                    </button>
+                    <span class="summ">Цены по запросу</span>
+                </div>
+            </div>
+        </div>
+        <div class="zhk-2">
+            <div class="card-zhk">
+                <img src="/img/terra.webp" alt="">
+                <h3>ЖК&nbsp;Terra</h3>
+                <span class="metro">м. Лесная</span>
+                <span class="comfort">
+                    <nobr>Бизнес-класс</nobr>
+                </span>
+                <span class="comfort">Квартиры с&nbsp;гостиной и&nbsp;гардеробной</span>
+                <div>
+                    <button>
+                        <a href="/zhk/terra/terra.html">Квартиры</a>
+                    </button>
+                    <span class="summ">Цены по запросу</span>
+                </div>
+            </div>
+            <div class="card-zhk">
+                <img src="/img/msk.webp" alt="">
+                <h3>ЖК&nbsp;Московский</h3>
+                <span class="metro">м. Звездная</span>
+                <span class="comfort">
+                    <nobr>Комфорт-класс</nobr>
+                </span>
+                <span class="comfort">Отделка в&nbsp;подарок</span>
+                <div>
+                    <button>
+                        <a href="/zhk/msk/msk.html">Квартиры</a>
+                    </button>
+                    <span class="summ">Цены по запросу</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="zhk-3">
+            <div class="card-zhk"> <img src="/img/orlov.webp" alt="">
+                <h3>ЖК&nbsp;Граф Орлов</h3>
+                <span class="metro">м. Московская</span>
+                <span class="comfort">
+                    <nobr>Бизнес-класс</nobr>
+                </span>
+                <span class="comfort">Потолки до&nbsp;4,5&nbsp;м.</span>
+                <div>
+                    <button>
+                        <a href="/zhk/orlov/orlov.html">Квартиры</a>
+                    </button>
+                    <span class="summ">Цены по запросу</span>
+                </div>
+            </div>
+            <div class="card-zhk"> <img src="/img/london.webp" alt="">
+                <h3>ЖК&nbsp;Лондон парк</h3>
+                <span class="metro">м. Проспект Просвещения</span>
+                <span class="comfort">
+                    <nobr>Комфорт-класс</nobr>
+                </span>
+                <span class="comfort">Свой вишневый сад</span>
+                <div>
+                    <button>
+                        <a href="/zhk/london/london.html">Квартиры</a>
+                    </button>
+                    <span class="summ">Цены по запросу</span>
+                </div>
+            </div>
+            <div class="card-zhk">
+                <img src="/zhk/murino/img/card-photo.jpg" alt="">
+                <h3>ЖК&nbsp;ID Murino II</h3>
+                <span class="metro">м. Девяткино</span>
+                <span class="comfort">
+                    <nobr>Комфорт-класс</nobr>
+                </span>
+                <span class="comfort">Умные технологии</span>
+                <div>
+                    <button>
+                        <a href="/zhk/murino/murino.html">Квартиры</a>
+                    </button>
+                    <span class="summ">Цены по запросу</span>
+                </div>
+            </div>
+            <div class="card-zhk"> <img src="/img/poet.webp" alt="">
+                <h3>ЖК&nbsp;Поэт</h3>
+                <span class="metro">м. Проспект Просвещения</span>
+                <span class="comfort">
+                    <nobr>Комфорт-класс</nobr>
+                </span>
+                <span class="comfort">С&nbsp;видом на&nbsp;Сосновку</span>
+                <div>
+                    <button>
+                        <a href="/zhk/poet/poet.html">Квартиры</a>
+                    </button> <span class="summ">Цены по запросу</span>
+                </div>
+            </div>
+            <div class="card-zhk"> <img src="/img/terra.webp" alt="">
+                <h3>ЖК&nbsp;Terra</h3>
+                <span class="metro">м. Лесная</span>
+                <span class="comfort">
+                    <nobr>Бизнес-класс</nobr>
+                </span>
+                <span class="comfort">Квартиры с&nbsp;гостиной и&nbsp;гардеробной</span>
+                <div>
+                    <button>
+                        <a href="/zhk/terra/terra.html">Квартиры</a>
+                    </button> <span class="summ">Цены по запросу</span>
+                </div>
+            </div>
+            <div class="card-zhk"> <img src="/img/msk.webp" alt="">
+                <h3>ЖК&nbsp;Московский</h3>
+                <span class="metro">м. Звездная</span>
+                <span class="comfort">
+                    <nobr>Комфорт-класс</nobr>
+                </span>
+                <span class="comfort">Отделка в&nbsp;подарок</span>
+                <div>
+                    <button>
+                        <a href="/zhk/msk/msk.html">Квартиры</a>
+                    </button> <span class="summ">Цены по запросу</span>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!--  -->
+        <h2 style="margin-top: 45px;" class="dev-text">Ведущие застройщики <nobr>Санкт-Петербурга</nobr>
+        </h2>
+
+
+        <div class="developer">
+            <div class="dev-logo">
+                <img src="/img/cds.webp" alt="">
+            </div>
+            <div class="dev-logo">
+                <img src="/img/ars.webp" alt="">
+            </div>
+            <div class="dev-logo">
+                <img src="/img/lsr.webp" alt="">
+            </div>
+            <div class="dev-logo">
+                <img src="/img/setl.webp" alt="">
+            </div>
+            <div class="dev-logo">
+                <img src="/img/rsti.webp" alt="">
+            </div>
+            <div class="dev-logo">
+                <img src="/img/n1.webp" alt="">
+            </div>
+        </div>
+
+        <div class="developer-2-wrapper">
+            <div class="developer-2">
+                <img src="/img/cds.webp" alt="">
+                <img src="/img/ars.webp" alt="">
+                <img src="/img/lsr.webp" alt="">
+            </div>
+            <div class="developer-2">
+                <img src="/img/setl.jwebp" alt="">
+                <img src="/img/rsti.webp" alt="">
+                <img src="/img/n1.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--  -->
+
+    <h2 class="calc-h2" id="ipoteka">Ипотечный калькулятор</h2>
+
+    <section class="calcul">
+        <iframe id="calcus-iframe-ipoteka" width="100%" height="300" frameborder="0" style="width:1px; min-width: 100%;"
+            scrolling="no" src="https://calcus.ru/kalkulyator-ipoteki?embed=1"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div style="margin-top:5px; font-size: 0.9em; color:#999">Ипотечный калькулятор предоставлен сайтом <a
+                href="https://calcus.ru/kalkulyator-ipoteki" target="_blank">calcus.ru</a></div>
+    </section>
+
+    <script>
+        window.addEventListener('message', function (event) {
+            if (height_ipoteka = event.data['height_ipoteka']) {
+                document.getElementById('calcus-iframe-ipoteka').style.height = height_ipoteka + 'px'
+            }
+        })
+    </script>
+
+    <!--  -->
+
+
+    <section class="section-3">
+        <div class="container-3">
+            <div class="wrapper">
+                <h3 class="help">Найдем квартиру. <br> Поможем с&nbsp;ипотекой. <br> Бесплатно!</h3>
+                <form class="call" action="send.php" method="POST">
+                    <input name="phone" type="text" class="phone" placeholder="Ваш номер телефона"
+                        style="padding-top: 8px; padding-bottom: 8px; padding-left: 8px;">
+                    <input name="name" type="text" class="phone" placeholder="Ваше имя"
+                        style="padding-top: 8px; padding-bottom: 8px; padding-left: 8px;">
+                    <input type="submit" class="callme" style="text-align: center;">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" charset="utf-8" async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad9828a47a58d37854c93ba9cd3e96abc3d0c35eb9538d9fc7b1a1cf53c618885&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false">
+        </script>
+
+
+
+    <footer class="footer" id="footer">
+        <div class="footer-wrapper">
+            <div class="contacts">
+                <span class="footer-name">
+                    Агентство недвижимости "Весь Петербург"
+                </span>
+                <span class="footer-adress">
+                    Санкт-Петербург, Большой проспект Петроградской стороны, 32, Офис 303
+                </span>
+            </div>
+            <div class="footer-phone-wrapper">
+                <span class="footer-phone">
+                    +7 921 366-16-93
+                </span>
+            </div>
+        </div>
+        <div class="text-wrapper">
+            <p>Уважаемые посетители сайта! Обращаем Ваше внимание, что вся информация, представленная на данном сайте,
+                носит
+                исключительно информационный характер, не является офертой или публичной офертой в соответствии со ст.
+                435,
+                п. 2 ст. 437 Гражданского Кодекса Российской Федерации. Указанные на сайте цены являются
+                ориентировочными,
+                застройщик может изменить указанные цены в любой момент по своему усмотрению без какого-либо
+                предварительного уведомления. Цена каждого договора формируется индивидуально, с учетом, в том числе:
+                выбранного проекта, его места расположения, этапа строительства, условий оплаты, действующих на момент
+                заключения договора специальных акций и (или) условий и т.п. Представленные на сайте изображения
+                проектов, в
+                том числе изображения планировок отдельных квартир и нежилых помещений, являются схематичными и могут
+                отличаться от материалов проектной и рабочей документации, также изображения на фотографиях и рисунках
+                могут
+                отличаться от реального объекта. Всю информацию об условиях продаж, порядке заключения договоров, точных
+                характеристиках проектов и т.п. Вы можете узнать по телефону +7 921 366 16 93 и (или) непосредственно в
+                нашем офисе.
+            </p>
+        </div>
+
+    </footer>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+            (function (m, e, t, r, i, k, a) {
+                m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+                m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+            })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(84949786, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/84949786" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="/js/pop.js"></script>
+</body>
+
+</html>

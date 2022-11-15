@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/fonts/stylesheet.css">
+    <link rel="stylesheet" href="/zhk/css/zhk.css">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>ЖК ID Murino 2</title>
+</head>
+
+<body>
+
+
+    <header class="header animate__animated animate__fadeInLeft">
+        <img src="/zhk/murino/img/logo.png" alt="" class="poetlogo">
+        <div class="logo">
+
+            <a href="/index.html"><img src="/img/logo.png" alt="" class="logoimg"></a>
+        </div>
+        <nav class="nav">
+            <a href="#plan" class="navlink">Планировки</a>
+            <a href="#gal" class="navlink">Галерея</a>
+            <a href="#geo" class="navlink">Месторасположение</a>
+        </nav>
+        <div class="tel">
+            <a href="tel:+7 921 366-16-93" class="number">+7 921 366-16-93</a>
+        </div>
+    </header>
+
+    <main class="main" style="background-image: url(/zhk/murino/img/bg.jpg); ">
+        <h1 class="h1-poet  animate__animated animate__fadeInDown">
+            ЖИЛОЙ КОМПЛЕКС "ID MURINO II"
+        </h1>
+        <p class="p-poet">
+            Современный клубный квартал
+
+        </p>
+        <button class="btn-poet">
+            <a href="#about">Выбрать квартиру</a>
+        </button>
+        <div class="plus-poet  animate__animated animate__fadeInRight">
+            <span>Ипотека от 1,85%</span>
+            <span>Старт продаж 8 корпуса</span>
+            <span>10 минут до метро</span>
+        </div>
+    </main>
+
+    <section class="about">
+        <div class="text">
+            <h2 id="about">
+                О жилом комплексе
+            </h2>
+            <p>
+                Представляем ЖК iD Murino II. Это жилой квартал в динамично растущем районе Ленинградской области от
+                создателей iD Murino – самого востребованного жилого комплекса в локации. Идеи формата 3iD (атмосфера
+                добрососедства в сочетании с умными технологиями и максимальным комфортом на уровне квартиры), впервые
+                воплощенные Euroinvest Development в премьерном проекте в Мурино, получат здесь дальнейшее развитие.
+                Проект реализуется в сегменте Urban, объединяющем современное, комфортное и доступное жилье от надежного
+                застройщика в перспективных частях Петербурга и ближайших пригородов с хорошей транспортной
+                доступностью. Aйди мурино 2 – продолжение счастливой истории, в которой вы играете главную роль.
+
+            </p>
+        </div>
+        <div class="about-img">
+            <img src="/zhk/murino/img/about-1.webp" alt="" class="img-about-1">
+            <img src="/zhk/murino/img/about-2.jpg" alt="" class="img-about">
+        </div>
+    </section>
+
+
+    <h2>Выберите параметры квартиры и <br> получите подборку прямо сейчас</h2>
+
+    <form class="setting" method="POST" action="/zhk/murino/send.php">
+
+        <select name="rooms">
+            <option value="Студия">Студия</option>
+            <option value="1-комнатная">1-комнатная</option>
+            <option value="2-комнатная">2-комнатная</option>
+            <option value="3-комнатная">3-комнатная</option>
+            <option value="4-комнатная">4-комнатная</option>
+            <option value="Евро-планировка">Евро-планировка</option>
+        </select>
+
+        <select method="POST" action="send.php">
+            <option value="Ипотека">Ипотека</option>
+            <option value="100% оплата">100% оплата</option>
+            <option value="Субсидия">Субсидия</option>
+            <option value="Рассрочка">Рассрочка</option>
+        </select>
+
+        <select method="POST" action="send.php">
+            <option value="До 5млн. рублей">До 5млн. рублей</option>
+            <option value=">До 8млн. рублей">До 8млн. рублей</option>
+            <option value="До 10млн. рублей">До 10млн. рублей</option>
+            <option value="До 13млн. рублей">До 13млн. рублей</option>
+            <option value="До 15млн. рублей">До 15млн. рублей</option>
+            <option value="От 15млн. рублей">От 15млн. рублей</option>
+        </select>
+
+        <input type="tel" name="phone" class="input-phone" placeholder="Ваш телефон" pattern="\+?[0-9\s\-\(\)]+" minlength="10"/>
+        <input type="submit" class="take" style="color: white;">
+
+    </form>
+
+    <section class="advantages-poet">
+        <h2>Преимущества жилого комплекса</h2>
+        <div class="wrapper-advantages">
+            <div class="card-advantages">
+                <img src="/zhk/img/Group_29.png" alt="" class="img-advantages">
+                <span class="text-advantages">Панорамные виды на город
+                </span>
+            </div>
+            <div class="card-advantages">
+                <img src="/zhk/img/Group_30.png" alt="" class="img-advantages">
+                <span class="text-advantages">Детский сад и школа под окнами
+                </span>
+            </div>
+            <div class="card-advantages">
+                <img src="/zhk/img/Group_31.png" alt="" class="img-advantages">
+                <span class="text-advantages">Просторные колясочные
+                </span>
+            </div>
+        </div>
+        <div class="wrapper-advantages">
+            <div class="card-advantages">
+                <img src="/zhk/img/Group_32.png" alt="" class="img-advantages">
+                <span class="text-advantages">Отсутствие студий
+                </span>
+            </div>
+            <div class="card-advantages">
+                <img src="/zhk/img/Group_33.png" alt="" class="img-advantages">
+                <span class="text-advantages">Улучшенная отделка парадных
+                </span>
+            </div>
+            <div class="card-advantages">
+                <img src="/zhk/img/Group_34.png" alt="" class="img-advantages">
+                <span class="text-advantages">Закрытая территория
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section class="photo-poet" id="gal">
+        <div class="wrapper-img">
+            <img class="img-poet" src="/zhk/murino/img/p-1.jpg" alt="" style="width: 300px;
+            height: 300px;">
+            <img class="img-poet" src="/zhk/murino/img/p-2.jpg" alt="" style="width: 300px;
+            height: 300px;">
+        </div>
+        <div class="wrapper-img">
+            <img class="img-poet" src="/zhk/murino/img/p-3.jpg" alt="" style="width: 300px;
+            height: 300px;">
+            <img class="img-poet" src="/zhk/murino/img/p-4.webp" alt="" style="width: 300px;
+            height: 300px;">
+        </div>
+    </section>
+
+    <section class="phone">
+        <div class="telephone">
+            <a href="tel:+7 921 366-16-93">+7 921 366-16-93</a>
+            <span>Ответим на все вопросы по жилому комплексу</span>
+        </div>
+    </section>
+
+
+
+    <div class="swiper-container" id="plan">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <h2>1-комнатная</h2>
+                <div class="card-kv">
+                    <img src="/zhk/murino/img/1rooms/1.jpg" alt="" class="img-kv" id="kv">
+                    <span class="s-kv">от 32,78 кв.м</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <h2>1-комнатная</h2>
+
+                <div class="card-kv">
+                    <img src="/zhk/murino/img/1rooms/2.jpg" alt="" class="img-kv" id="kv">
+                    <span class="s-kv">от 35,4 кв.м</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <h2>1-комнатная</h2>
+
+                <div class="card-kv">
+                    <img src="/zhk/murino/img/1rooms/3.jpg" alt="" class="img-kv" id="kv">
+                    <span class="s-kv" id="s-kv">от 37,27 кв.м</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <h2>1-комнатная</h2>
+
+                <div class="card-kv">
+                    <img src="/zhk/murino/img/1rooms/4.jpg" alt="" class="img-kv" id="kv">
+                    <span class="s-kv" id="s-kv">от 37,27 кв.м</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <h2>1-комнатная</h2>
+
+                <div class="card-kv">
+                    <img src="/zhk/murino/img/1rooms/5.jpg" alt="" class="img-kv" id="kv">
+                    <span class="s-kv" id="s-kv">от 37,27 кв.м</span>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <h2>2-комнатная</h2>
+                <div class="card-kv">
+                    <img src="/zhk/murino/img/2rooms/1 (2).jpg" alt="" class="img-kv" id="kv">
+                    <span class="s-kv">от 49,85 кв.м</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <h2>2-комнатная</h2>
+
+                <div class="card-kv">
+                    <img src="/zhk/murino/img/2rooms/2 (2).jpg" alt="" class="img-kv" id="kv">
+                    <span class="s-kv">от 55,54 кв.м</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <h2>2-комнатная</h2>
+
+                <div class="card-kv">
+                    <img src="/zh/murino/img/2rooms/3 (2).jpg" alt="" class="img-kv" id="kv">
+                    <span class="s-kv" id="s-kv">от 64,69 кв.м</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <h2>2-комнатная</h2>
+
+                <div class="card-kv">
+                    <img src="/zh/murino/img/2rooms/4 (2).jpg" alt="" class="img-kv" id="kv">
+                    <span class="s-kv" id="s-kv">от 64,69 кв.м</span>
+                </div>
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+    </div>
+
+
+
+
+
+
+    <section class="advantages-poet">
+        <h2>Инфраструктура</h2>
+        <div class="wrapper-advantages">
+            <div class="card-advantages">
+                <img src="/zhk/img/Group_29.png" alt="" class="img-advantages">
+                <span class="text-advantages">Панорамные виды на город
+                </span>
+            </div>
+            <div class="card-advantages">
+                <img src="/zhk/img/Group_30.png" alt="" class="img-advantages">
+                <span class="text-advantages">Детский сад и школа под окнами
+                </span>
+            </div>
+            <div class="card-advantages">
+                <img src="/zhk/img/Group_31.png" alt="" class="img-advantages">
+                <span class="text-advantages">Просторные колясочные
+                </span>
+            </div>
+        </div>
+        <div class="wrapper-advantages">
+            <div class="card-advantages">
+                <img src="/zhk/img/Group_32.png" alt="" class="img-advantages">
+                <span class="text-advantages">Отсутствие студий
+                </span>
+            </div>
+            <div class="card-advantages">
+                <img src="/zhk/img/Group_33.png" alt="" class="img-advantages">
+                <span class="text-advantages">Улучшенная отделка парадных
+                </span>
+            </div>
+            <div class="card-advantages">
+                <img src="/zhk/img/Group_34.png" alt="" class="img-advantages">
+                <span class="text-advantages">Закрытая территория
+                </span>
+            </div>
+        </div>
+    </section>
+
+
+    <section style="text-align: center;">
+        <h2>Благоустроенная территория</h2>
+        <img src="/zhk/murino/img/terra.jpg" alt="" class="terr">
+    </section>
+
+    <h2 id="geo" style="margin-top: 110px;">Месторасположение</h2>
+
+    <script type="text/javascript" charset="utf-8" async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A14abb4ca76346c9564d5627e706d173d39433f46427e97cc7bf3a23ded6f3bb7&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false">
+    </script>
+
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="contacts">
+                <span class="footer-name">
+                    Агентство недвижимости "Весь Петербург"
+                </span>
+                <span class="footer-adress">
+                    Санкт-Петербург, Большой проспект Петроградской стороны, 32, Офис 303
+                </span>
+            </div>
+            <div class="footer-phone-wrapper">
+                <span class="footer-phone">
+                    +7 921 366-16-93 </span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/js/swiper.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="/js/pop.js"></script>
+
+</body>
+
+</html>
